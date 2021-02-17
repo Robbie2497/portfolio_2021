@@ -9,7 +9,7 @@ body {
 }
 
 p {
-  word-break: break-all;
+  /* word-break: break-all; */
   margin-bottom: 120px;
 }
 
