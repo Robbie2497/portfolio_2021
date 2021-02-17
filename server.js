@@ -18,7 +18,7 @@ app.use(require("./routes/feedback.js"));
 if (process.env.NODE_ENV === "production") {
 
   // change public back to build before deploying
-  app.use(express.static("client/public"));
+  app.use(express.static("client/build"));
 }
 
 app.get("/", (req, res) => {
@@ -43,7 +43,7 @@ mongoose.connection.once('open', function () {
 app.get("*", function(req, res) {
 
   // change public back to build before deploying
-  res.sendFile(path.join(__dirname, "./client/public/index.html"));
+  res.sendFile(path.join(__dirname, "./client/build/index.html"));
 });
 
 app.listen(PORT, function() {
