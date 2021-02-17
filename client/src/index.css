@@ -1,0 +1,258 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  width: 100%;
+  background-image: url("https://www.transparenttextures.com/patterns/wood-pattern.png");
+}
+
+p {
+  word-break: break-all;
+  margin-bottom: 120px;
+}
+
+
+/* Responsiveness */
+
+
+
+/* Animations */
+@keyframes example {
+  0%   {left: -500px; top: 125px;}
+  100%  {left: 475px; top: 125px;}
+}
+
+
+/* Navbar */
+.nav {
+  background-color: black;
+  opacity: 90%;
+  padding: 5px;
+}
+
+.nav-link {
+  color: white;
+}
+
+.nav-link:hover {
+  color: rgb(12, 167, 219);
+}
+
+.header-picture {
+  background-color: #050505;
+  background-image: url("https://www.transparenttextures.com/patterns/wood-pattern.png");
+/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+  height: 200px;
+  width: 100%;
+}
+
+.header-picture-hidden {
+  visibility: hidden;
+  height: 0px;
+  width: 0px;
+}
+
+.robert-mcgrew {
+  position: absolute;
+  left: 10px;
+  top: -1px;
+  color: white;
+}
+
+.robert-mcgrew:hover {
+  /* color: rgb(12, 167, 219); */
+  cursor: pointer;
+  color: white;
+  text-decoration: none;
+}
+
+.homepage-heading {
+    position: relative;
+    animation-name: example;
+    animation-duration: 4s;  
+    animation-fill-mode: forwards;
+    position: absolute;
+    top: 125px;
+    left: 475px;
+    color: white;
+}
+
+/* Profile Picture */
+.wallpaper {
+  height: 250px;
+  width: 100%;
+}
+
+.my-img {
+  height: 300px;
+  width: 300px;
+  float: right;
+  margin-left: 30px;
+}
+
+
+/* About Me */
+.me {
+  margin-top: 25px;
+}
+
+
+/* Footer */
+.footer {
+  text-align: center;
+  background-color: rgb(222, 222, 222);
+}
+
+.footer button {
+  position: relative;
+  left: 195px;
+  top: 190px;
+}
+
+.contactInfo {
+  text-align: left;
+}
+
+.contacts {
+  color: black;
+}
+
+.phone-icon {
+  color: green;
+}
+
+.facebook-icon {
+  color: blue;
+}
+
+.linkedIn-icon {
+  color: #0e76a8;
+}
+
+.feedback {
+  border: none;
+  background-color: rgb(222, 222, 222);
+}
+
+.feedback:focus {
+  outline: none; 
+}
+
+
+/* Feedback Page */
+.feedback-text {
+  margin-top: 15px;
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+.feedback-form {
+  margin-bottom: 90px;
+  width: 550px;
+  padding-top: 30px;
+  padding-bottom: 60px;
+  padding-left: 20px;
+  padding-right: 20px;
+  height: auto;
+  background-color: lightgray;
+}
+
+.feedback-submit-btn {
+  position: absolute;
+  right: 10px;
+  bottom: 5px;
+}
+
+
+/* Contact Page */
+.contact-card {
+  background-color: lightgray;
+}
+
+.contact-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+  margin-bottom: 130px;
+}
+
+.contact-container h2 {
+  text-align: center;
+}
+
+
+/* View Feedback */
+.feedback-header {
+  text-align: center;
+}
+
+div .card-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  background-color: lightgray;
+}
+
+div .card {
+  margin: 10px;
+  /* background-color: lightgray; */
+}
+
+div .card-title {
+  text-align: center;
+}
+
+
+/* New Projects Page */
+.projects-card-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 25px 25px;
+  background-color: lightgray;
+  background-image: url("./Images/wood-pattern.png");
+}
+
+.projects-card-container img {
+  height: 150px;
+  width: 100%;
+}
+
+#projects {
+  background-image: url("./Images/wood-pattern.png");
+  color: white;
+  text-align: center;
+  padding: 5px;
+  margin-top: 300px;
+}
+
+a.btn.btn-primary {
+  position: absolute;
+  bottom: 0px;
+  margin-bottom: 10px;
+  margin-right: 20px;
+  border: none;
+}
+
+.pop-up-btn {
+  height: auto;
+  width: auto;
+  margin-left: 10px;
+  background-color: rgb(12, 167, 219);
+  border: none;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  border-radius: 50%;
+}
+
+.pop-up-btn:hover {
+  background-color: lightgreen;
+}
+
+.popover-body {
+  overflow: scroll;
+}
