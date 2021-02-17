@@ -70,7 +70,7 @@ Sed vel ada Integer blandit quam sapien, nec luctus nisl semper et. Maecenas ut 
                             Some quick example text to build on the card title and make up the bulk of
                             the card's content.
   </Card.Text>
-                        <Button variant="primary">Go somewhere</Button>
+  <Button variant="primary" href="https://utahviews.herokuapp.com/" target="blank">Click here to see the  application live!</Button>
                     </Card.Body>
                 </Card>
                 <Card style={{ width: '18rem' }}>
