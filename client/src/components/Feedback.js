@@ -25,7 +25,7 @@ class Feedback extends Component {
     axios.post('/feedback', { name, description })
       .then((result) => {
         alert("Thank you for the feedback!")
-        // this.setState({ name: '', description: '' });
+        this.setState({ name: '', description: '' });
       });
   }
 
