@@ -2,7 +2,7 @@ const express = require("express");
 const path = require("path");
 const mongoose = require("mongoose");
 const dotenv = require("dotenv");
-const bodyParser = require('body-parser');
+// const bodyParser = require('body-parser');
 
 const PORT = process.env.PORT || 3001;
 const app = express();
@@ -10,7 +10,7 @@ dotenv.config();
 
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
-app.use(bodyParser.json());
+// app.use(bodyParser.json());
 app.use(require("./routes/feedback.js"));
 
 
