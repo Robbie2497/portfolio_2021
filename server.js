@@ -1,11 +1,12 @@
 const express = require("express");
 const path = require("path");
 const mongoose = require("mongoose");
-require("dotenv").config();
-let bodyParser = require('body-parser');
+const dotenv = require("dotenv");
+const bodyParser = require('body-parser');
 
 const PORT = process.env.PORT || 3001;
 const app = express();
+dotenv.config();
 
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
@@ -27,7 +28,7 @@ app.get("/", (req, res) => {
 });
 
 
-mongoose.connect(process.env.MONGODB_CONNECTION_STRING, 
+mongoose.connect(`mongodb+srv://${process.env.DB_USER}:${process.env.DB_PASS}@cluster0.vpzzt.mongodb.net/<dbname>?retryWrites=true&w=majority`), 
 { useUnifiedTopology: true, useNewUrlParser: true, useCreateIndex: true, useFindAndModify: false }
 );
 
