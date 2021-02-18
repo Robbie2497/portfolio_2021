@@ -1,5 +1,5 @@
 import React from "react";
-import Nav from "react-bootstrap/Nav";
+// import Nav from "react-bootstrap/Nav";
 // import { Link, useLocation } from "react-router-dom";
 
 function NavTabs() {
@@ -10,24 +10,17 @@ function NavTabs() {
 
   return (
 
-    <Nav variant="tabs" defaultActiveKey="/home">
-  <Nav.Item>
-    <Nav.Link href="/">Active</Nav.Link>
-  </Nav.Item>
-  <Nav.Item>
-    <Nav.Link href="/#projects">Option 2</Nav.Link>
-  </Nav.Item>
-  <Nav.Item>
-    <Nav.Link href="/contact">
-    Contact
-    </Nav.Link>
-  </Nav.Item>
-  <Nav.Item>
-    <Nav.Link href="/feedback">
-    Feedback
-    </Nav.Link>
-  </Nav.Item>
-</Nav>
+
+
+<nav class="nav">
+  <a class="nav-link active mr-auto robert-mcgrew" href="/"><h3>Robert McGrew</h3></a>
+  <a class="nav-link active" href="/">About</a>
+  <a class="nav-link active" href="/#projects">Projects</a>
+  <a class="nav-link" href="/contact">Contact</a>
+  <a class="nav-link" href="/feedback">Feedback</a>
+</nav>
+
+
 
     // <div className="navBarHeader">
     //   <ul className="nav nav-tabs">
