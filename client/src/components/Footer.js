@@ -40,7 +40,7 @@ const submitFeedback = () => {
             </MDBCol>
             </MDBRow>
       </MDBContainer>
-      <div className="footer-copyright text-center py-3">
+      <div className="footer-copyright text-center py-3 copy-right-footer">
         <MDBContainer fluid>
           &copy; {new Date().getFullYear()} Copyright: Robert McGrew
         </MDBContainer>

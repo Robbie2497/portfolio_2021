@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import { Form, Col, Button } from "react-bootstrap";
 import axios from 'axios';
+import Navbar from './Navbar';
+import Footer from './Footer';
 
 
 class Feedback extends Component {
@@ -31,6 +33,7 @@ class Feedback extends Component {
     const { name, description } = this.state;
     return (
       <>
+      <Navbar />
         <div className="feedback-text">
           <h5>I am always open to and appreciate feedback to expand my knowledge. If you have any comments, please submit the form below.</h5>
         </div>
@@ -60,6 +63,7 @@ class Feedback extends Component {
           </div>
           <div className="col-lg-4"></div>
         </div>
+        <Footer />
       </>
     );
   }

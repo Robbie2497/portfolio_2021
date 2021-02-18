@@ -1,10 +1,12 @@
 import React from 'react';
 import { Card, ListGroup, ListGroupItem } from "react-bootstrap";
 import { FaEnvelope, FaPhoneAlt, FaFacebook, FaLinkedin, FaGitSquare } from 'react-icons/fa';
+import Navbar from "./Navbar";
 
 function Contact() {
   return (
-
+    <>
+    <Navbar />
     <div className="contact-container">
       <Card style={{ width: "35%" }} className="contact-card">
         <Card.Body>
@@ -20,7 +22,7 @@ function Contact() {
         <Card.Body></Card.Body>
       </Card>
     </div>
-
+  </>
   );
 }
 

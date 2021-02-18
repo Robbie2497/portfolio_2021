@@ -1,6 +1,8 @@
 import React, { Component } from "react";
 import { Card } from "react-bootstrap";
 import axios from "axios";
+import Navbar from "./Navbar";
+import Footer from "./Footer";
 
 
 
@@ -41,12 +43,16 @@ class Favorites extends Component {
 
     render() {
         return (
+            <>
+            <Navbar />
             <header>
                 <h1 className="feedback-header">Feedback that has been submitted</h1>
                 <div className="card-container">
                     {this.displayFeedback(this.state.feedback)}
                 </div>
             </header>
+            <Footer />
+            </>
         )
     }
 }

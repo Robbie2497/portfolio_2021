@@ -1,10 +1,13 @@
 import React from 'react';
 import { Card, Button, OverlayTrigger, Popover } from "react-bootstrap";
 import { FaInfoCircle } from 'react-icons/fa';
+import Navbar from "./Navbar";
+import Footer from "./Footer";
 
 function Homepage() {
     return (
         <>
+        <Navbar />
             <div className="container homePageFooter">
                 <div className="about-me">
                     <section className="me">
@@ -145,6 +148,7 @@ Sed vel ada Integer blandit quam sapien, nec luctus nisl semper et. Maecenas ut 
                     </Card.Body>
                 </Card>
             </div>
+            <Footer />
         </>
     );
 }
