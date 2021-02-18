@@ -10,7 +10,6 @@ function NavTabs() {
   return (
 
     <div className="navBarHeader">
-      <h4>Hello World!</h4>
       <ul className="nav nav-tabs">
         <li className="nav-item ml-auto">
         <Link

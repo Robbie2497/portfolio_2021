@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import Contact from './components/Contact';
 import Navbar from './components/Navbar';
 import Homepage from './components/Homepage';
@@ -15,6 +15,7 @@ import NewProjects from './components/NewProjects';
 function App() {
   return (
     <Router>
+        <Switch>
       <div className="page-container">
         <div className="content-wrap">
         <Navbar />
@@ -28,6 +29,7 @@ function App() {
         </div>
         </div>
       </div>
+      </Switch>
     </Router>
   );
 }
