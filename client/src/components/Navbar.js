@@ -18,8 +18,13 @@ function NavTabs() {
     <Nav.Link href="/#projects">Option 2</Nav.Link>
   </Nav.Item>
   <Nav.Item>
-    <Nav.Link href="/contact" disabled>
+    <Nav.Link href="/contact">
     Contact
+    </Nav.Link>
+  </Nav.Item>
+  <Nav.Item>
+    <Nav.Link href="/feedback">
+    Feedback
     </Nav.Link>
   </Nav.Item>
 </Nav>

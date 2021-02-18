@@ -23,7 +23,7 @@ if (process.env.NODE_ENV === "production") {
 
 app.get("/", (req, res) => {
   // Handle root
-  res.sendFile(path.join(__dirname, "./clent/public/index.html"));
+  res.sendFile(path.join(__dirname, "./clent/build/index.html"));
 });
 
 
