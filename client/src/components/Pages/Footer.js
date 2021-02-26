@@ -14,7 +14,13 @@ const submitFeedback = () => {
     <MDBFooter color="blue" className="font-small pt-4 mt-4">
       <MDBContainer fluid className="text-center text-md-left">
           <MDBRow className="footer">
-              <MDBCol md="5"></MDBCol>
+              <MDBCol md="5">
+                <img className="badge-icon"
+                  src="badge.png"
+                  alt="badge" 
+                  target="blank" /> <br />
+                <a className="verify-badge" href="https://www.youracclaim.com/badges/72ca0066-d5ad-4850-be41-0b469e0ab3fc" rel="verify badge" target="blank">Click here to verify</a>
+              </MDBCol>
               <MDBCol md="3" className="contactInfo">
             <h6 className="title">Created by: Robert McGrew</h6>
             <ul>

@@ -1,6 +1,8 @@
 import React from "react";
 import { Link, useLocation } from "react-router-dom";
 
+
+
 function Navbar() {
   // We'll go into the Hooks API later, for now, we are just using some code
   // from the react-router docs (https://reacttraining.com/react-router/web/api/Hooks/uselocation)
@@ -12,10 +14,13 @@ function Navbar() {
     <div className="navBarHeader">
       <ul className="nav nav-tabs">
         <li className="nav-item ml-auto">
-        <Link
-          to="/"
-          className="robert-mcgrew"
-          ><h1>Robert McGrew</h1></Link>
+          <Link
+            to="/"
+            className="robert-mcgrew">
+            <h1>Robert McGrew</h1>
+          </Link>
+          </li>
+          <li>
           <Link
             to="/"
             className={location.pathname === "/" ? "nav-link active" : "nav-link"}
@@ -46,8 +51,9 @@ function Navbar() {
       <img className={location.pathname === "/" ? "header-picture" : "header-picture-hidden"}
         src="coding_2.jpg"
         alt="Wallpaper" />
-        <h1 className={location.pathname === "/" ? "homepage-heading" : "homepage-heading-hidden"}>Full-Stack Web Developer</h1>
-      
+      <h1 className={location.pathname === "/" ? "homepage-heading" : "homepage-heading-hidden"}>Full-Stack Web Developer</h1>
+
+
     </div>
   );
 }

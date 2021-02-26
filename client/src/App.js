@@ -1,11 +1,11 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
-import Contact from './components/Contact';
-import Homepage from './components/Homepage';
-import Feedback from './components/Feedback';
-import ViewFeedback from './components/ViewFeedback';
+import Contact from './components/Pages/Contact';
+import Homepage from './components/Pages/Homepage';
+import Feedback from './components/Pages/Feedback';
+import ViewFeedback from './components/Pages/ViewFeedback';
 // import Footer from './components/Footer';
-import NewProjects from './components/NewProjects';
+import NewProjects from './components/Pages/NewProjects';
 
 
 

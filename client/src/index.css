@@ -43,7 +43,7 @@ p {
   background-color: #050505;
   background-image: url("https://www.transparenttextures.com/patterns/wood-pattern.png");
 /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
-  height: 200px;
+height: 200px;
   width: 100%;
 }
 
@@ -67,11 +67,11 @@ p {
 }
 
 .robert-mcgrew:hover {
-  /* color: rgb(12, 167, 219); */
+  color: rgb(12, 167, 219);
   cursor: pointer;
   color: white;
   text-decoration: none;
-}
+ }
 
 .homepage-heading {
     position: relative;
@@ -103,6 +103,10 @@ p {
   margin-top: 25px;
 }
 
+.me p {
+  background-color: rgb(250, 243, 231);
+}
+
 
 /* Footer */
 .footer {
@@ -117,6 +121,7 @@ p {
 }
 
 .contactInfo {
+  margin-top: 10px;
   text-align: left;
 }
 
@@ -147,6 +152,25 @@ p {
 
 .copy-right-footer {
   background-color: rgb(222, 222, 222);
+}
+
+.badge-icon {
+  margin-top: 10px;
+  margin-bottom: 5px;
+  height: 70%;
+  width: 20%;
+}
+
+.verify-badge {
+  margin-top: 10px;
+  text-decoration: none;
+  color: white;
+  color: black;
+}
+
+.verify-badge:hover {
+  color: black;
+  text-decoration: none;
 }
 
 /* Feedback Page */
@@ -213,7 +237,7 @@ div .card-title {
 }
 
 
-/* New Projects Page */
+/* Projects Section */
 .projects-card-container {
   display: flex;
   flex-direction: row;
@@ -234,7 +258,7 @@ div .card-title {
   color: white;
   text-align: center;
   padding: 5px;
-  margin-top: 300px;
+  margin-top: 260px;
 }
 
 a.btn.btn-primary {
@@ -258,7 +282,11 @@ a.btn.btn-primary {
 }
 
 .pop-up-btn:hover {
-  background-color: lightgreen;
+  background-color: rgb(30, 141, 20);
+}
+
+.pop-up-btn:focus {
+  background-color: rgb(79, 216, 79);
 }
 
 .popover-body {

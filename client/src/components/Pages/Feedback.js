@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import { Form, Col, Button } from "react-bootstrap";
 import axios from 'axios';
-import Navbar from './Navbar';
-import Footer from './Footer';
+import Navbar from '../Navbar/Navbar';
+import Footer from '../Pages/Footer';
 
 
 class Feedback extends Component {
@@ -35,7 +35,7 @@ class Feedback extends Component {
       <>
       <Navbar />
         <div className="feedback-text">
-          <h5>I am always open to and appreciate feedback to expand my knowledge. If you have any comments, please submit the form below.</h5>
+          <h5>I am always open to and appreciate feedback to expand my knowledge and skills. If you have any comments, please submit the form below.</h5>
         </div>
         <div className="row">
           <div className="col-lg-4"></div>
@@ -46,7 +46,7 @@ class Feedback extends Component {
                   <Form.Label></Form.Label>
                   <Form.Control type="text"
                     name="name"
-                    placeholder="Name"
+                    placeholder="Name (optional)"
                     value={name}
                     onChange={this.onChange} />
                 </Form.Group>

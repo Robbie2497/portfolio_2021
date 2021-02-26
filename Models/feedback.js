@@ -4,8 +4,7 @@ const Schema = mongoose.Schema;
 
 const FeedbackSchema = new Schema({
   name: {
-    type: String,
-    required: "Name is Required"
+    type: String
   },
 
   description: {
