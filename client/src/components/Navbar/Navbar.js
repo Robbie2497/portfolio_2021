@@ -1,61 +1,32 @@
 import React from "react";
-import { Link, useLocation } from "react-router-dom";
+import { useLocation } from "react-router-dom";
+import { Nav, Navbar, Jumbotron } from 'react-bootstrap';
 
 
 
-function Navbar() {
-  // We'll go into the Hooks API later, for now, we are just using some code
-  // from the react-router docs (https://reacttraining.com/react-router/web/api/Hooks/uselocation)
-  // This allows the component to check the route any time the user uses a link to navigate.
+
+function Navigation() {
   const location = useLocation();
 
   return (
-
-    <div className="navBarHeader">
-      <ul className="nav nav-tabs">
-        <li className="nav-item ml-auto">
-          <Link
-            to="/"
-            className="robert-mcgrew">
-            <h1>Robert McGrew</h1>
-          </Link>
-          </li>
-          <li>
-          <Link
-            to="/"
-            className={location.pathname === "/" ? "nav-link active" : "nav-link"}
-          >
-            About
-        </Link>
-        </li>
-        <li className="nav-item">
-          <a href="/#projects" rel="projects" className={location.pathname === "/newprojects" ? "nav-link active" : "nav-link"}>Projects</a>
-        </li>
-        <li className="nav-item">
-          <Link
-            to="/contact"
-            className={location.pathname === "/contact" ? "nav-link active" : "nav-link"}
-          >
-            Contact
-        </Link>
-        </li>
-        <li className="nav-item">
-          <Link
-            to="/feedback"
-            className={location.pathname === "/feedback" ? "nav-link active" : "nav-link"}
-          >
-            Feedback
-        </Link>
-        </li>
-      </ul>
-      <img className={location.pathname === "/" ? "header-picture" : "header-picture-hidden"}
-        src="coding_2.jpg"
-        alt="Wallpaper" />
-      <h1 className={location.pathname === "/" ? "homepage-heading" : "homepage-heading-hidden"}>Full-Stack Web Developer</h1>
-
-
-    </div>
+    <>
+      <Navbar collapseOnSelect expand="lg" variant="dark" style={{ backgroundColor: "black" }}>
+        <Navbar.Brand href="/" style={{ fontSize: "1.7rem" }}>Robert McGrew</Navbar.Brand>
+        <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+        <Navbar.Collapse id="responsive-navbar-nav">
+          <Nav className="ml-auto">
+            <Nav.Link href="/" style={{ textAlign: "center", color: "white" }}>About</Nav.Link>
+            <Nav.Link href="/#projects" style={{ textAlign: "center", color: "white" }}>Projects</Nav.Link>
+            <Nav.Link href="/contact" style={{ textAlign: "center", color: "white" }}>Contact</Nav.Link>
+            <Nav.Link href="/feedback" style={{ textAlign: "center", color: "white" }}>Feedback</Nav.Link>
+          </Nav>
+        </Navbar.Collapse>
+      </Navbar>
+      <Jumbotron fluid className={location.pathname === "/" ? "header-picture" : "header-picture-hidden"} style={{ backgroundImage: 'url(coding_2.jpg)' }}>
+        <h1 className={location.pathname === "/" ? "homepage-heading" : "homepage-heading-hidden"} style={{ color: 'white', textAlign: 'center' }}>Full-Stack Web Developer</h1>
+      </Jumbotron>
+    </>
   );
 }
 
-export default Navbar;
+export default Navigation;

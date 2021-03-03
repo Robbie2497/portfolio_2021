@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import { Card } from "react-bootstrap";
 import axios from "axios";
 import Navbar from "../Navbar/Navbar";
-import Footer from "../Pages/Footer";
+
 
 
 
@@ -51,7 +51,6 @@ class Favorites extends Component {
                     {this.displayFeedback(this.state.feedback)}
                 </div>
             </header>
-            <Footer />
             </>
         )
     }

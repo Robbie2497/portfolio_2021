@@ -1,7 +1,7 @@
 import React from 'react';
 import { Card, Button, OverlayTrigger, Popover } from "react-bootstrap";
 import { FaInfoCircle } from 'react-icons/fa';
-import fitness_tracker_img from '../../Images/fitness_tracker.png';
+import fitness_tracker_img from '../Images/fitness_tracker.png';
 
 export default function Projects() {
     return (

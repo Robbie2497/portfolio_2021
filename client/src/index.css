@@ -4,7 +4,7 @@
 }
 
 body {
-  width: 100%;
+  /* width: 100%; */
   background-image: url("https://www.transparenttextures.com/patterns/wood-pattern.png");
 }
 
@@ -12,10 +12,6 @@ p {
   /* word-break: break-all; */
   margin-bottom: 120px;
 }
-
-
-/* Responsiveness */
-
 
 
 /* Animations */
@@ -74,7 +70,7 @@ height: 200px;
  }
 
 .homepage-heading {
-    position: relative;
+    /* position: relative; */
     animation-name: example;
     animation-duration: 4s;  
     animation-fill-mode: forwards;
@@ -93,8 +89,6 @@ height: 200px;
 .my-img {
   height: 300px;
   width: 300px;
-  float: right;
-  margin-left: 30px;
 }
 
 
@@ -103,8 +97,19 @@ height: 200px;
   margin-top: 25px;
 }
 
+.about-me {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  float: right;
+}
+
 .me p {
-  background-color: rgb(250, 243, 231);
+  margin-top: 150px;
+  /* background-color: rgb(250, 243, 231); */
+  background-color: rgb(250, 243, 233);
 }
 
 
@@ -258,7 +263,6 @@ div .card-title {
   color: white;
   text-align: center;
   padding: 5px;
-  margin-top: 260px;
 }
 
 a.btn.btn-primary {
@@ -291,4 +295,37 @@ a.btn.btn-primary {
 
 .popover-body {
   overflow: scroll;
+}
+
+
+/* Responsiveness */
+
+@media screen and (max-width: 900px) {
+  .homepage-heading {font-size: 30px;}
+  .feedback {float: left;}
+  .badge-icon {height: 100px; width: 100px;}
+  .my-img {height: 85%; width: 200px; margin-left: 30px;}
+
+  @keyframes example {
+    0%   {left: -500px; top: 125px;}
+    100%  {left: 325px; top: 125px;}
+    100% {visibility: hidden;}
+  }
+  
+
+}
+
+@media screen and (max-width: 600px) {
+
+  .homepage-heading {visibility: hidden;}
+  .header-picture {height: 100px;}
+  .feedback {visibility: hidden;}
+  .badge-icon {height: 30px; width: 30px;}
+  .my-img {height: 85%; width: 200px;}
+/* 
+  @keyframes example {
+    0%   {left: -500px; top: 100px;}
+    100%  {left: 75px; top: 100px;}
+  } */
+  
 }

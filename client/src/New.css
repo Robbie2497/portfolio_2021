@@ -1,0 +1,387 @@
+body {
+  background-image: url("https://www.transparenttextures.com/patterns/wood-pattern.png");
+}
+
+
+
+
+/* Home Page */
+.my-img {
+  height: 100%;
+  width: 100%;
+}
+
+.homepage-heading-hidden {
+  visibility: hidden;
+  height: 0px;
+  width: 0px;
+}
+
+.header-picture-hidden {
+  visibility: hidden;
+  height: 0px;
+  width: 0px;
+}
+
+
+
+/* Projects Section */
+/* #projectsHeader {
+  background-image: url("./Images/wood-pattern.png");
+  text-align: center;
+  color: white;
+  padding: 5px 0px;
+}
+
+.projectsContainer {
+  background-image: url("./Images/wood-pattern.png");
+  margin-top: 10px;
+  margin-bottom: 150px;
+}
+
+.projectsContainer .col-md-3 {
+  margin-bottom: 50px;
+}
+
+a.btn.btn-primary {
+  position: absolute;
+  bottom: 0px;
+  margin-bottom: 10px;
+  margin-right: 20px;
+  border: none;
+}
+
+.pop-up-btn {
+  height: auto;
+  width: auto;
+  margin-left: 10px;
+  background-color: rgb(12, 167, 219);
+  border: none;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  border-radius: 50%;
+}
+
+.pop-up-btn:hover {
+  background-color: rgb(30, 141, 20);
+}
+
+.pop-up-btn:focus {
+  background-color: rgb(79, 216, 79);
+}
+
+.popover-body {
+  overflow: scroll;
+} */
+
+.projects-card-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 25px 25px;
+  background-color: lightgray;
+  background-image: url("./Images/wood-pattern.png");
+  margin-bottom: 100px;
+}
+
+.projects-card-container img {
+  height: 150px;
+  width: 100%;
+}
+
+#projects {
+  background-image: url("./Images/wood-pattern.png");
+  color: white;
+  text-align: center;
+  padding: 5px;
+}
+
+a.btn.btn-primary {
+  position: absolute;
+  bottom: 0px;
+  margin-bottom: 10px;
+  margin-right: 20px;
+  border: none;
+}
+
+.pop-up-btn {
+  height: auto;
+  width: auto;
+  margin-left: 10px;
+  background-color: rgb(12, 167, 219);
+  border: none;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  border-radius: 50%;
+}
+
+.pop-up-btn:hover {
+  background-color: rgb(30, 141, 20);
+}
+
+.pop-up-btn:focus {
+  background-color: rgb(79, 216, 79);
+}
+
+.popover-body {
+  overflow: scroll;
+}
+
+.card-text {
+  padding-bottom: 30px;
+}
+
+
+
+/* Footer */
+.footer {
+  text-align: center;
+}
+
+.copy-right-footer {
+  text-align: center;
+}
+
+.contactInfo .col-md-3 {
+  margin-top: 10px;
+  text-align: left;
+}
+
+.contacts {
+  color: black;
+}
+
+.phone-icon {
+  color: green;
+}
+
+.facebook-icon {
+  color: blue;
+}
+
+.linkedIn-icon {
+  color: #0e76a8;
+}
+
+
+
+
+/* Contact Page */
+.contact-card {
+  background-color: lightgray;
+}
+
+.contact-container {
+  background-image: url("./Images/wood-pattern.png");
+  display: flex;
+  justify-content: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin-top: -100px;
+  margin-left: 500px;
+  margin-right: 500px;
+}
+
+.contact-container h2 {
+  text-align: center;
+}
+
+
+
+
+/* Feedback Page */
+.feedback-text {
+  margin-top: -105px;
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+.feedback-form {
+  margin-bottom: 90px;
+  width: 550px;
+  padding-top: 30px;
+  padding-bottom: 60px;
+  padding-left: 20px;
+  padding-right: 20px;
+  height: auto;
+  background-color: lightgray;
+}
+
+.feedback-submit-btn {
+  position: absolute;
+  right: 10px;
+  bottom: 5px;
+}
+
+
+
+
+
+/* View Feedback Page */
+.feedback-header {
+  margin-top: -130px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+div .card-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  background-color: lightgray;
+}
+
+div .card {
+  margin: 10px;
+  /* background-color: lightgray; */
+}
+
+div .card-title {
+  text-align: center;
+}
+
+
+/* Responsive */
+/* Bigger Screens */
+@media screen and (min-width: 992px) {
+  .homepage-heading{
+  animation-name: example;
+    animation-duration: 4s;  
+    animation-fill-mode: forwards;
+    position: absolute;
+    top: 125px;
+    left: 475px;
+    color: white;
+  }
+
+
+  .projects-card-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin: 25px 50px;
+    background-color: lightgray;
+    background-image: url("./Images/wood-pattern.png");
+    margin-bottom: 100px;
+  }
+
+
+@keyframes example {
+  0%   {left: -500px; top: 100px;}
+  100%  {left: 475px; top: 100px;}
+}
+}
+
+@media screen and (max-width: 5000px) and (min-width: 992px) {
+  .my-img {
+    position: relative;
+    top: 20%;
+    height: 75%;
+    width: 100%;
+  }
+
+
+  @keyframes example {
+    0%   {left: -500px; top: 100px;}
+    100%  {left: 30%; top: 100px;}
+  }
+}
+
+@media screen and (max-width: 991px) and (min-width: 400px) {
+  .my-img {
+    position: absolute;
+    bottom: 70%;
+    right: 250px;
+    height: 60%;
+    width: 100%;
+  }
+
+  .col-sm-9 {
+    position: relative;
+    left: 15%;
+    bottom: -100px;
+  }
+
+  .projects-card-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin: 25px 50px;
+    background-color: lightgray;
+    background-image: url("./Images/wood-pattern.png");
+    margin-bottom: 100px;
+  }
+
+  .feedback-form {
+    position: relative;
+    left: 25%;
+    margin-bottom: 90px;
+    width: 550px;
+    padding-top: 30px;
+    padding-bottom: 60px;
+    padding-left: 20px;
+    padding-right: 20px;
+    height: auto;
+    background-color: lightgray;
+  }
+
+}
+
+@media screen and (max-width: 399px) {
+  .my-img {
+  position: relative;
+  bottom: 650px;
+  }
+
+  .col-sm-9 {
+    position: relative;
+    top: 350px;
+  }
+
+  .card {
+    padding-left: 15px;
+    padding-right: 3px;
+    background-image: url("./Images/wood-pattern.png");
+  }
+
+  .card-body {
+    background-color: white;
+  }
+
+
+  .contact-container {
+width: 100%;
+position: relative;
+left: -500px;
+padding-bottom: 75%;
+  }
+
+  .contacts {
+    font-size: x-large;
+  }
+
+  .feedback-text {
+    margin-top: 2px;
+  }
+
+  .feedback-form {
+    width: 100%;
+  }
+
+  .feedback-rows {
+    width: 99%;
+    margin-left: 1px;
+  }
+
+  .feedback-header {
+    margin-top: 1px;
+  }
+  
+  
+
+}

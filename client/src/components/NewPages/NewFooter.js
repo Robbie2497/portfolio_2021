@@ -3,27 +3,28 @@ import { MDBCol, MDBContainer, MDBRow, MDBFooter } from "mdbreact";
 import { FaEnvelope, FaPhoneAlt, FaFacebook, FaLinkedin, FaGitSquare } from 'react-icons/fa';
 
 
-const Footer = () => {
+const NewFooter = () => {
 
-const submitFeedback = () => {
-  window.location="/viewfeedback";
-}
+// const submitFeedback = () => {
+//   window.location="/viewfeedback";
+// }
 
   return (
     
-    <MDBFooter color="blue" className="font-small pt-4 mt-4">
+    <MDBFooter color="blue" className="font-small pt-4 mt-4" style={{backgroundColor: "lightgray"}}>
       <MDBContainer className="text-center text-md-left">
           <MDBRow className="footer">
               <MDBCol md="5">
                 <img className="badge-icon"
                   src="badge.png"
                   alt="badge" 
-                  target="blank" /> <br />
+                  target="blank" 
+                  style={{height: "150px", width: "150px"}} /> <br />
                 <a className="verify-badge" href="https://www.youracclaim.com/badges/72ca0066-d5ad-4850-be41-0b469e0ab3fc" rel="verify badge" target="blank">Click here to verify</a>
               </MDBCol>
               <MDBCol md="3" className="contactInfo">
             <h6 className="title">Created by: Robert McGrew</h6>
-            <ul>
+            <ul style={{textAlign: "left"}}>
               <li className="list-unstyled">
               <FaEnvelope className='email-icon' /> <a href="mailto:robbie2497@gmail.com"><u className="contacts"> robbie2497@gmail.com</u></a>
               </li>
@@ -42,12 +43,12 @@ const submitFeedback = () => {
             </ul>
             </MDBCol>
             <MDBCol md="4">
-              <button className="feedback" onClick={submitFeedback}>Feedback</button>
+              {/* <button className="feedback" onClick={submitFeedback}>Feedback</button> */}
             </MDBCol>
             </MDBRow>
       </MDBContainer>
       <div className="footer-copyright text-center py-3 copy-right-footer">
-        <MDBContainer>
+        <MDBContainer style={{textAlign: "center"}}>
           &copy; {new Date().getFullYear()} Copyright: Robert McGrew
         </MDBContainer>
       </div>
@@ -55,4 +56,4 @@ const submitFeedback = () => {
   );
 }
 
-export default Footer;
+export default NewFooter;
